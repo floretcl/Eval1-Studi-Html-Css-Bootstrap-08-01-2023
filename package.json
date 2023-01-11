@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/floretcl/Eval1-Studi-Html-Css-Bootstrap-08-01-2023#readme",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3"
   }
 }
