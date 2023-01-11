@@ -1,0 +1,103 @@
+@mixin header-nav-link-after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.1rem;
+    background-color: var(--bs-nav-link-hover-color);
+}
+
+@mixin header-nav-link-after-sm {
+    content: "";
+    position: absolute;
+    right: var(--bs-navbar-nav-link-padding-x);
+    bottom: 0;
+    height: 0.1rem;
+    background-color: var(--bs-nav-link-hover-color);
+}
+
+.navbar-brand {
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+    &:focus, &:hover {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0 2px;
+    }
+}
+
+header .nav-link {
+    position: relative;
+    padding: 0.25rem var(--bs-nav-link-padding-x);
+    &.active {
+        &::after {
+            @include header-nav-link-after;
+            width: 1rem;  
+        } 
+    }
+    &::after {
+        @include header-nav-link-after;
+        width: 0;
+        animation-name: nav-link-effect-hover-end;
+        animation-duration: 100ms;
+        animation-timing-function: ease-in;
+    }
+    &:hover {
+        &::after {
+            @include header-nav-link-after;
+            width: 1rem;
+            animation-name: nav-link-effect-hover-start;
+            animation-duration: 250ms;
+            animation-timing-function: ease-in;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    header .nav-link {
+        position: relative;
+        &.active {
+            &::after {
+                @include header-nav-link-after-sm;
+                left: var(--bs-navbar-nav-link-padding-x);
+                width: 1rem;
+            }
+        }
+        &::after {
+            @include header-nav-link-after-sm;
+            width: 0;
+            animation-name: nav-link-effect-hover-end-sm;
+            animation-duration: 100ms;
+            animation-timing-function: ease-in;
+        }
+        &:hover {
+            &::after {
+                @include header-nav-link-after-sm;
+                left: var(--bs-navbar-nav-link-padding-x);
+                width: 1rem;
+                animation-name: nav-link-effect-hover-start-sm;
+                animation-duration: 250ms;
+                animation-timing-function: ease-in;
+            }
+        }
+    }
+
+    .display-md-none {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        img {
+            width: 75px;
+            height: 75px;
+        }
+    }
+}

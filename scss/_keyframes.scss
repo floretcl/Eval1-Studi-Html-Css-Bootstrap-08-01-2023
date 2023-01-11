@@ -1,0 +1,42 @@
+@keyframes nav-link-effect-hover-start {
+    0% { 
+        width: 0;
+    }
+    50% {
+        width: 12rem;
+    }
+    100%  {
+        width: 1rem;
+    }
+}
+
+@keyframes nav-link-effect-hover-end {
+    from { 
+        width: 1rem;
+    }
+    to  {
+        width: 0;
+    }
+}
+
+@keyframes nav-link-effect-hover-start-sm {
+    0% { 
+        width: 0;
+    }
+    50%  {
+        left: var(--bs-navbar-nav-link-padding-x); 
+        width: calc(100% - 2 * var(--bs-navbar-nav-link-padding-x));
+    }
+    100% {
+        width: 1rem;
+    }
+}
+
+@keyframes nav-link-effect-hover-end-sm {
+    from { 
+        width: 1rem;
+    }
+    to  {
+        width: 0;
+    }
+}

@@ -1,3 +1,31 @@
-@use "../node_modules/bootstrap/scss/bootstrap.scss";
+@use "../node_modules/bootstrap/scss/bootstrap.scss" with (
 
-$primary: rgb(147, 215, 104);
+    $primary: rgb(125, 217, 86),
+    $secondary: rgb(135, 140, 144),
+    $success: rgb(123, 237, 74),
+    $info: rgb(29, 122, 189),
+    $warning: rgb(250, 191, 15),
+    $danger: rgb(211, 69, 83),
+);
+
+.btn-outline-light {
+    --bs-btn-hover-color: var(--bs-primary);
+    --bs-btn-active-color: var(--bs-success);
+}
+
+/* ---- HEADER ---- */
+
+
+
+/* ---- HEADER - END ---- */
+
+/* ---- FOOTER ---- */
+
+footer .nav-link {
+    padding: 0.25rem var(--bs-nav-link-padding-x);
+    &:hover {
+        color: darken(#f9fafb, 10%) !important;
+    }
+}
+
+/* ---- FOOTER - END ---- */
