@@ -1,11 +1,11 @@
 @use "../node_modules/bootstrap/scss/bootstrap.scss" with (
 
-    $primary: rgb(125, 217, 86),
-    $secondary: rgb(135, 140, 144),
-    $success: rgb(123, 237, 74),
-    $info: rgb(29, 122, 189),
-    $warning: rgb(250, 191, 15),
-    $danger: rgb(211, 69, 83),
+    $primary: #7DD956,
+    $secondary: #878C90,
+    $success: #7BED4A,
+    $info: #1D7ABD,
+    $warning: #FABF0F,
+    $danger: #D34553,
 );
 
 .btn-outline-light {
@@ -13,19 +13,42 @@
     --bs-btn-active-color: var(--bs-success);
 }
 
-/* ---- HEADER ---- */
+// ---------------- ARTICLES - START --------------- //
 
+.article-img {
+    width: 100%;
+    max-width: 300px;
+}
 
-
-/* ---- HEADER - END ---- */
-
-/* ---- FOOTER ---- */
-
-footer .nav-link {
-    padding: 0.25rem var(--bs-nav-link-padding-x);
-    &:hover {
-        color: darken(#f9fafb, 10%) !important;
+@media (min-width: 576px) and (max-width: 767px) {
+    .article-img {
+        max-width: 360px;
     }
 }
 
-/* ---- FOOTER - END ---- */
+@media (min-width: 768px) {
+    .article-img {
+        max-width: 100%;
+        height: 94%;
+        object-fit: cover;
+        object-position: 50% 0%;
+    }
+}
+
+// ---------------- ARTICLES - END --------------- //
+
+// ---------------- LINKS - START --------------- //
+
+.link-twitter-color {
+    color: #1DA1F2 !important;
+}
+
+.link-facebook-color {
+    color: #4267B2 !important;
+}
+
+.link-rss-color {
+    color: #EE802F !important;
+}
+
+// ---------------- LINKS - END  --------------- //
