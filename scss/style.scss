@@ -3,3 +3,78 @@
 @use 'keyframes';
 @use 'header';
 @use 'footer';
+
+// ---------------- INDEX ARTICLES - START --------------- //
+
+.article-img {
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .article-img {
+        max-width: 360px;
+    }
+}
+
+@media (min-width: 768px) {
+    .article-img {
+        max-width: 100%;
+        height: 94%;
+        object-fit: cover;
+        object-position: 50% 0%;
+    }
+}
+
+// ---------------- INDEX ARTICLES - END --------------- //
+
+// ---------------- INDEX LINKS - START --------------- //
+
+.link-twitter-color {
+    color: #1DA1F2 !important;
+}
+
+.link-facebook-color {
+    color: #4267B2 !important;
+}
+
+.link-rss-color {
+    color: #EE802F !important;
+}
+
+// ---------------- INDEX LINKS - END  --------------- //
+
+.img-assoc {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .img-assoc {
+        display: inline;
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: auto;
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-assoc {
+        display: inline;
+        max-width: 420px;
+        width: 100%;
+    }
+}
+
+// ---------------- ASSOC CARDS - START --------------- //
+
+.card-img {
+    max-width: 400px;
+    height: 220px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+// ---------------- ASSOC CARDS - END --------------- //
+
