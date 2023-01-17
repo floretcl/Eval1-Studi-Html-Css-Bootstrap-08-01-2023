@@ -4,6 +4,8 @@
 @use 'header';
 @use 'footer';
 
+// ---------------- INDEX - START --------------- //
+
 // ---------------- INDEX ARTICLES - START --------------- //
 
 .article-img {
@@ -44,6 +46,13 @@
 
 // ---------------- INDEX LINKS - END  --------------- //
 
+// ---------------- INDEX - END --------------- //
+
+
+
+
+// ---------------- ASSOC - START  --------------- //
+
 .img-assoc {
     display: none;
 }
@@ -77,4 +86,33 @@
 }
 
 // ---------------- ASSOC CARDS - END --------------- //
+
+// ---------------- ASSOC - END  --------------- //
+
+
+
+
+// ---------------- CONTACT - START  --------------- //
+
+// ---------------- LEAFLET-MAP - START  --------------- //
+
+.leaflet-map {
+    height: 200px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .leaflet-map {
+        height: 220px;
+    } 
+}
+
+@media (min-width: 768px) {
+    .leaflet-map {
+        height: 260px;
+    } 
+}
+
+// ---------------- LEAFLET-MAP - END  --------------- //
+
+// ---------------- CONTACT - END  --------------- //
 

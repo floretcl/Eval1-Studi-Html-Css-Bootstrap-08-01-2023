@@ -11222,4 +11222,19 @@ footer .nav-link:hover {
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+}
+
+.leaflet-map {
+  height: 200px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .leaflet-map {
+    height: 220px;
+  }
+}
+@media (min-width: 768px) {
+  .leaflet-map {
+    height: 260px;
+  }
 }/*# sourceMappingURL=style.css.map */
