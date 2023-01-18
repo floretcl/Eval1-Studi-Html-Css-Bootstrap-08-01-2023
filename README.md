@@ -10,5 +10,6 @@ Technologies used :
     - HTML
     - CSS
     - Bootstrap
+    - (JS) Leaflet : OSM Embed Map 
 
 Created on 08 january 2023.
