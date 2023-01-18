@@ -1,4 +1,4 @@
-import "./../../node_modules/bootstrap/dist/js/bootstrap.esm.js";
+import * as bootstrap from "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 
 /* Leaflet - Contact Map */
