@@ -11215,13 +11215,23 @@ footer .nav-link:hover {
     width: 100%;
   }
 }
-.card-img {
+.card-picture {
+  overflow: hidden;
+}
+.card-picture .card-img {
   max-width: 400px;
   height: 220px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+  filter: none;
+  transition: all 300ms;
+}
+.card-picture .card-img:hover {
+  transform: scale(1.1);
+  filter: brightness(112%);
+  transition: all 300ms;
 }
 
 .leaflet-map {
