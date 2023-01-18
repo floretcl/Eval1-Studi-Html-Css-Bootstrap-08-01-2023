@@ -1,6 +1,3 @@
-import * as bootstrap from "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-
-
 /* Leaflet - Contact Map */
 
 const lon = 48.836210;
